@@ -164,7 +164,7 @@ class LoginController extends Controller
                     'email' => $user->email,
                     'phone' => $user->phone,
                 ]
-            ], 200);
+            ], 200);  
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
